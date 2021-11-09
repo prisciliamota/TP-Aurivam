@@ -1,0 +1,36 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            
+            int senha = 123;
+
+            for (int i = 0; i < 3; i++)
+            {
+                Console.WriteLine("Digite sua senha:");
+                senha = int.Parse(Console.ReadLine());
+
+                if (senha == 123)
+                {
+                    Console.WriteLine("Acesso permitido!");
+                }
+                else
+                {
+                    Console.WriteLine("Acesso negado, tente novamente.");
+                }
+            }
+
+
+
+            Console.ReadLine();
+        }
+    }
+}
