@@ -1,0 +1,42 @@
+using System;
+
+namespace Compra_certa_Priscilia
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string nproduto;
+            double valor, total, parcela;
+            int qtd;
+
+            Console.WriteLine("Insira o nome do produto:");
+            nproduto = Console.ReadLine();
+
+            Console.WriteLine("Insira o valor do produto em R$:");
+            valor = double.Parse(Console.ReadLine());
+
+            Console.WriteLine("Insira a quantidade desejada:");
+            qtd = int.Parse(Console.ReadLine());
+
+            total = qtd * valor;
+            parcela = total / 3;
+
+            if (valor > 300)
+            {
+                Console.WriteLine("Bom cliente.");
+            }
+            else
+            {
+                Console.WriteLine("Cliente mediano.");
+            }
+            Console.WriteLine("Compra realizada. O total foi de R$ " + total);
+            Console.WriteLine("O valor da compra parcelada em 3 vezes fica R$ " + parcela);
+
+            Console.WriteLine("Obrigado por utilizar nossos serviços!");
+
+
+            //Priscilia Oliveira Mota - 1° DS Turma B//
+        }
+    }
+}
